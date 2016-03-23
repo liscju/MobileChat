@@ -12,4 +12,38 @@
     tools:context="pl.edu.agh.mobilechat.SimpleChatActivity"
     tools:showIn="@layout/activity_simple_chat">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nickTextView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="318dp"
+            android:id="@+id/chatListView"
+            android:layout_weight="0.61" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageEditText"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:id="@+id/sendButton"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
 </RelativeLayout>
